@@ -11,8 +11,9 @@ print("""
 num = input("Enter Your choice : \n")
 distro = input("Enter Your release of ubuntu [focal | bionic | xenial] : ")
 
+
 def generate_ssl(distro):
-    # try:
+    try:
         subprocess.run('cd /etc/ssl/private'.split())
         subprocess.run('echo "# TLS_CACERT    /etc/ssl/certs/ca-certificate" > /etc/ldap/ldap.conf'.split(), encoding="ascii")
         subprocess.run('echo "TLS_REQCERT    /etc/ssl/certs/ca-certificate" >> /etc/ldap/ldap.conf'.split(), encoding="ascii")
@@ -27,6 +28,9 @@ def generate_ssl(distro):
             subprocess.run('ldapmodify -Y EXTERNAL -H ldapi:/// -f mod_ssl.ldif'.split())
         subprocess.run('systemctl restart slapd'.split())
         subprocess.run('systemctl restart slapd'.split())
+    except BaseException as e:
+        print(e)
+
 
 def run(command, type):
     print(f"Installing Openldap {type} ", end='')
