@@ -11,10 +11,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 
 # CHANGE REPOSITORIES # ----------------------------------------------------------------------------------------------------------------------------------- #
-RUN echo 'deb [arch=amd64] http://ayene.mahsan.net/ubuntu/ focal main restricted universe multiverse'            > /etc/apt/sources.list
-RUN echo 'deb [arch=amd64] http://ayene.mahsan.net/ubuntu/ focal-updates main restricted universe multiverse'   >> /etc/apt/sources.list
-RUN echo 'deb [arch=amd64] http://ayene.mahsan.net/ubuntu/ focal-security main restricted universe multiverse'  >> /etc/apt/sources.list
-RUN echo 'deb [arch=amd64] http://ayene.mahsan.net/ubuntu/ focal-backports main restricted universe multiverse' >> /etc/apt/sources.list
+RUN echo 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse'            > /etc/apt/sources.list
+RUN echo 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse'   >> /etc/apt/sources.list
+RUN echo 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse'  >> /etc/apt/sources.list
+RUN echo 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse' >> /etc/apt/sources.list
 # --------------------------------------------------------------------------------------------------------------------------------------------------------- #
 
 
