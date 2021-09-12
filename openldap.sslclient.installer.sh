@@ -79,7 +79,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 
 # INSTALL PACKAGES # -------------------------------------------------------------------------------------------------------------------------------------- #
-apt-get -y --force-yes install libnss-ldap libpam-ldap ldap-utils sudo-ldap openssh-server
+apt-get -y install libnss-ldap libpam-ldap ldap-utils sudo-ldap openssh-server
 # --------------------------------------------------------------------------------------------------------------------------------------------------------- #
 
 
