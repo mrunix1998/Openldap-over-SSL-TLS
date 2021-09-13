@@ -85,6 +85,8 @@ if num == '1':
         run('sudo -S bash openldap.server.installer.sh install', 'server')
     elif distro == 'xenial':
         run('sudo -S bash openldap.server.installer.sh install', 'server')
+    else:
+        print(" [-] Invalid Input in chosing distribution")
 
 elif num == '2':
     if distro == 'focal':
@@ -93,6 +95,8 @@ elif num == '2':
         run('sudo -S bash openldap.client.installer.sh install', 'client')
     elif distro == 'xenial':
         run('sudo -S bash openldap.client.installer.sh install', 'client')
+    else:
+        print(" [-] Invalid Input in chosing distribution")
 
 elif num == '3':
     if distro == 'focal':
@@ -111,6 +115,8 @@ elif num == '3':
             generate_ssl()
         except BaseException as e:
             print(e)
+    else:
+        print(" [-] Invalid Input in chosing distribution")
 
 elif num == '4':
     if distro == 'focal':
@@ -130,3 +136,7 @@ elif num == '4':
             use_ssl(distro)
         except BaseException as e:
             print(e)
+    else:
+        print(" [-] Invalid Input in chosing distribution")
+else:
+    print(" [-] Invalid Input in chosing menu number")
