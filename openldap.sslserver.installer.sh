@@ -1,14 +1,15 @@
 #! /bin/bash
-# Programming and idea by : Iman Homayouni
-# Gitbub : https://github.com/iman-homayouni
-# Email : homayouni.iman@Gmail.com
-# Website : http://www.homayouni.info
+# Programming and idea by : Mohammad Hossein Salehinezhad
+# Gitbub : https://github.com/mrunix1998/Openldap-over-SSL-TLS
+# Email : salehimohammad331@gmail.com
 # License : GPL v2.0
-# Last update : Mon, 23 Aug 2021 07:17:40 +0430
+# Last update : Wed, 16 Mar 2022 15:56:06 +0330
 # openldap.installer v1.0.0
 # DO NOT USE THIS SCRIPT IN PRODUCTION ENVIRONMENT BEFORE READING LINE BY LINE
 # --------------------------------------------------------------------------------------------------------------------------------------------------------- #
 # SUCCESSFULLY TESTED IN UBUNTU 20.04 [FOCAL]
+# SUCCESSFULLY TESTED IN UBUNTU 18.04 [BIONIC]
+# SUCCESSFULLY TESTED IN UBUNTU 16.04 [XENIAL]
 # --------------------------------------------------------------------------------------------------------------------------------------------------------- #
 
 
